@@ -1,0 +1,33 @@
+@model IEnumerable<App.DAL.DTO.PersonInWorkout>
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>PersonInWorkout</h4>
+    <hr />
+    <dl class="row">
+        
+        All personel in this workout
+        @{
+            foreach (var dataSet in Model!)
+            {
+                <div>==========================================</div>
+                <dr class="col-sm-2">
+                    Name is @dataSet.AppUser!.FirstName
+                </dr>
+                <dt class="col-sm-2">
+                    Comment is @dataSet.Comment
+                </dt>
+                
+            }
+        }
+    </dl>
+</div>
+<div>
+    @*<a asp-action="Edit" asp-route-id="@Model?.">Edit</a> |*@
+    <a asp-action="Index">Back to List</a>
+</div>

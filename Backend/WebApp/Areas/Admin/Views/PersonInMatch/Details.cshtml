@@ -1,0 +1,41 @@
+@model IEnumerable<App.DAL.DTO.PersonInMatch>
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>PersonInMatch</h4>
+    <hr />
+    <dl class="row">
+        All personel in this workout
+               @{
+                   foreach (var dataSet in Model!)
+                   {
+                       <div>==========================================</div>
+                       <dr class="col-sm-2">
+                           Name is @dataSet.AppUser!.FirstName
+                       </dr>
+                       <dt class="col-sm-2">
+                           Faults: @dataSet.Faults
+                       </dt>
+                       <dt class="col-sm-2">
+                           Aces: @dataSet.Aces
+                       </dt>
+                       <dt class="col-sm-2">
+                           Reception: @dataSet.Reception
+                       </dt>
+                       <dt class="col-sm-2">
+                           
+                       </dt>
+                       
+                   }
+               }
+    </dl>
+</div>
+<div>
+    @*<a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |*@
+    <a asp-action="Index">Back to List</a>
+</div>

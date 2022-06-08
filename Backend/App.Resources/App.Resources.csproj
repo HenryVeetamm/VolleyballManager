@@ -1,0 +1,189 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="App.Domain\Announcement.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Announcement.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\Club.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Club.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\Announcement.et.resx">
+        <DependentUpon>Announcement.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\Announcement.ru.resx">
+        <DependentUpon>Announcement.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\Match.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Match.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\Club.et.resx">
+        <DependentUpon>Club.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\Club.ru.resx">
+        <DependentUpon>Club.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\PersonInClub.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>PersonInClub.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\Match.et.resx">
+        <DependentUpon>Match.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\Match.ru.resx">
+        <DependentUpon>Match.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\PersonInMatch.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>PersonInMatch.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\PersonInClub.et.resx">
+        <DependentUpon>PersonInClub.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\PersonInClub.ru.resx">
+        <DependentUpon>PersonInClub.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\PersonInTeam.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>PersonInTeam.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\PersonInMatch.et.resx">
+        <DependentUpon>PersonInMatch.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\PersonInMatch.ru.resx">
+        <DependentUpon>PersonInMatch.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\PersonInWorkout.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>PersonInWorkout.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\PersonInTeam.et.resx">
+        <DependentUpon>PersonInTeam.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\PersonInTeam.ru.resx">
+        <DependentUpon>PersonInTeam.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\RolesInTeam.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>RolesInTeam.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\PersonInWorkout.et.resx">
+        <DependentUpon>PersonInWorkout.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\PersonInWorkout.ru.resx">
+        <DependentUpon>PersonInWorkout.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\SavedComparison.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>SavedComparison.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\RolesInTeam.et.resx">
+        <DependentUpon>RolesInTeam.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\RolesInTeam.ru.resx">
+        <DependentUpon>RolesInTeam.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\Team.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Team.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\SavedComparison.et.resx">
+        <DependentUpon>SavedComparison.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\SavedComparison.ru.resx">
+        <DependentUpon>SavedComparison.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\Workout.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Workout.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\Team.et.resx">
+        <DependentUpon>Team.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\Team.ru.resx">
+        <DependentUpon>Team.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\WorkoutType.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>WorkoutType.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\Workout.et.resx">
+        <DependentUpon>Workout.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="App.Domain\Workout.ru.resx">
+        <DependentUpon>Workout.resx</DependentUpon>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="App.Domain\Announcement.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Announcement.resx</DependentUpon>
+      </Compile>
+      <Compile Update="App.Domain\Club.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Club.resx</DependentUpon>
+      </Compile>
+      <Compile Update="App.Domain\Match.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Match.resx</DependentUpon>
+      </Compile>
+      <Compile Update="App.Domain\PersonInClub.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>PersonInClub.resx</DependentUpon>
+      </Compile>
+      <Compile Update="App.Domain\PersonInMatch.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>PersonInMatch.resx</DependentUpon>
+      </Compile>
+      <Compile Update="App.Domain\PersonInTeam.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>PersonInTeam.resx</DependentUpon>
+      </Compile>
+      <Compile Update="App.Domain\PersonInWorkout.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>PersonInWorkout.resx</DependentUpon>
+      </Compile>
+      <Compile Update="App.Domain\RolesInTeam.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>RolesInTeam.resx</DependentUpon>
+      </Compile>
+      <Compile Update="App.Domain\SavedComparison.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>SavedComparison.resx</DependentUpon>
+      </Compile>
+      <Compile Update="App.Domain\Team.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Team.resx</DependentUpon>
+      </Compile>
+      <Compile Update="App.Domain\Workout.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Workout.resx</DependentUpon>
+      </Compile>
+      <Compile Update="App.Domain\WorkoutType.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>WorkoutType.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

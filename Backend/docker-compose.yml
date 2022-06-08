@@ -1,0 +1,21 @@
+﻿version: '3.8'
+
+services:
+  volleyballmanager-postgres:
+    container_name: volleyballmanager-postgres
+    image: postgres:latest
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+    ports:
+      - "5432:5432"
+    volumes:
+      - volleyballmanager-postgres-volume:/var/lib/postgresql/data
+
+volumes:
+  volleyballmanager-postgres-volume:
