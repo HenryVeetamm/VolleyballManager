@@ -1,0 +1,36 @@
+.animated-background {
+    background: linear-gradient(to right, #618ab9,
+            #85bac4, #9ce3f8);
+    background-size: 400% 400%;
+    animation: animate-background 10s infinite ease-in-out;
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.body {
+    background-color: rgb(235, 248, 255);
+
+}
+
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 60px;
+    /* Footer height */
+}
